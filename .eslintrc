@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "react-app",
+    "@cr4zyc4t/common",
+    "@cr4zyc4t/common/import",
+    "@cr4zyc4t/common/react"
+  ],
+  "rules": {
+    "indent": [
+      "warn",
+      "tab",
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "semi": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/anchor-has-content": "off"
+  }
+}

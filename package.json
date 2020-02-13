@@ -2,14 +2,48 @@
   "name": "nextjs-checkout",
   "version": "0.1.0",
   "private": true,
+  "description": "NextJS checkout example with Paypal and Stripe",
+  "devDependencies": {
+    "@cr4zyc4t/eslint-config-common": "^1.0.4",
+    "@typescript-eslint/eslint-plugin": "2.x",
+    "@typescript-eslint/parser": "2.x",
+    "babel-eslint": "10.x",
+    "eslint": "6.x",
+    "eslint-config-react-app": "^5.2.0",
+    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cr4zyc4t/nextjs-checkout.git"
+  },
+  "keywords": [
+    "nextjs",
+    "paypal",
+    "stripe",
+    "checkout",
+    "ecommerce"
+  ],
+  "author": "ToanVQ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cr4zyc4t/nextjs-checkout/issues"
+  },
+  "homepage": "https://github.com/cr4zyc4t/nextjs-checkout#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15",
     "next": "9.2.1",
     "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "react-dom": "16.12.0",
+    "styled-jsx-plugin-sass": "^1.0.0"
   }
 }
