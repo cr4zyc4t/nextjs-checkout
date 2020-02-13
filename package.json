@@ -47,6 +47,7 @@
     "node-sass": "^4.13.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
+    "react-stripe-elements": "^6.0.1",
     "request": "^2.88.2",
     "styled-jsx-plugin-sass": "^1.0.0"
   }
