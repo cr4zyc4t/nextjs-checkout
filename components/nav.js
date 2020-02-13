@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
+  { href: '/paypal-legacy', label: 'Paypal Legacy' },
   { href: 'https://zeit.co/now', label: 'ZEIT' },
   { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
 ].map(link => ({
@@ -17,11 +18,22 @@ const Nav = () => (
           <a>Home</a>
         </Link>
       </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
+      {links.map(({ key, href, label }) => {
+        if (href.startsWith('http')) {
+          return (
+            <li key={key}>
+              <a href={href}>{label}</a>
+            </li>
+          )
+        }
+        return (
+          <li key={key}>
+            <Link href={href}>
+              <a>{label}</a>
+            </Link>
+          </li>
+        )
+      })}
     </ul>
 
     <style jsx>{`
@@ -49,7 +61,8 @@ const Nav = () => (
         text-decoration: none;
         font-size: 13px;
       }
-    `}</style>
+    `}
+    </style>
   </nav>
 )
 
