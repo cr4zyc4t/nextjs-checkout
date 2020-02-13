@@ -1,5 +1,9 @@
 {
 	"editor.tabSize": 2,
 	"editor.renderWhitespace": "boundary",
-	"editor.insertSpaces": false
+	"editor.insertSpaces": false,
+	"emmet.includeLanguages": {
+		"vue-html": "html",
+		"javascriptreact": "javascriptreact"
+	}
 }

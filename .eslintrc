@@ -5,6 +5,10 @@
     "@cr4zyc4t/common/import",
     "@cr4zyc4t/common/react"
   ],
+  "globals": {
+    "styled-jsx": "readonly",
+    "paypal": "readonly"
+  },
   "rules": {
     "indent": [
       "warn",
