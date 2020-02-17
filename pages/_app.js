@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
 			<Head>
 				<title>Home</title>
 				<link rel="icon" href="/favicon.ico" />
+				<script src="https://www.paypalobjects.com/api/checkout.js"></script>
 			</Head>
 			<Nav />
 			<Component {...pageProps} />

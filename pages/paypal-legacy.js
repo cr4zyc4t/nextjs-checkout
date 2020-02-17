@@ -58,9 +58,6 @@ export default function PaypalLegacy() {
 
 	return (
 		<div className="app-container">
-			<Head>
-				<script src="https://www.paypalobjects.com/api/checkout.js"></script>
-			</Head>
 			<div className="row">
 				<div className="col">
 					<Item name="Instax Mini 90 Neo Classic" price={`$${price}`} img="http://ecx.images-amazon.com/images/I/61%2BABMMN5zL._SL1500_.jpg" />
