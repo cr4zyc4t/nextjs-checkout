@@ -7,7 +7,6 @@ export default async function createPayment(req, res) {
 		res.end()
 	}
 	const { total } = req.body
-	console.log('ToanVQ: createPayment -> total', total);
 
 	// 2. Call /v1/payments/payment to set up the payment
 	request.post(`${PAYPAL_API}/v1/payments/payment`,
@@ -37,7 +36,6 @@ export default async function createPayment(req, res) {
 			json: true,
 		},
 		function (err, response) {
-			console.log('ToanVQ: createPayment -> response', response.body);
 			if (err) {
 				console.error(err);
 				return res.sendStatus(500);
