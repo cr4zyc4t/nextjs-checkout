@@ -2,41 +2,39 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
-  { href: '/paypal-legacy', label: 'Paypal Legacy' },
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
+	{ href: '/paypal-legacy', label: 'Paypal Legacy' },
 ].map(link => ({
-  ...link,
-  key: `nav-link-${link.href}-${link.label}`,
+	...link,
+	key: `nav-link-${link.href}-${link.label}`,
 }))
 
 const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => {
-        if (href.startsWith('http')) {
-          return (
-            <li key={key}>
-              <a href={href}>{label}</a>
-            </li>
-          )
-        }
-        return (
-          <li key={key}>
-            <Link href={href}>
-              <a>{label}</a>
-            </Link>
-          </li>
-        )
-      })}
-    </ul>
+	<nav>
+		<ul>
+			<li>
+				<Link href="/">
+					<a>Home</a>
+				</Link>
+			</li>
+			{links.map(({ key, href, label }) => {
+				if (href.startsWith('http')) {
+					return (
+						<li key={key}>
+							<a href={href}>{label}</a>
+						</li>
+					)
+				}
+				return (
+					<li key={key}>
+						<Link href={href}>
+							<a>{label}</a>
+						</Link>
+					</li>
+				)
+			})}
+		</ul>
 
-    <style jsx>{`
+		<style jsx>{`
       :global(body) {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
@@ -62,8 +60,8 @@ const Nav = () => (
         font-size: 13px;
       }
     `}
-    </style>
-  </nav>
+		</style>
+	</nav>
 )
 
 export default Nav
