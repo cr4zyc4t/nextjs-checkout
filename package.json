@@ -40,6 +40,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.2",
     "bootstrap-css-only": "^4.4.1",
     "dotenv": "^8.2.0",
     "lodash": "^4.17.15",
